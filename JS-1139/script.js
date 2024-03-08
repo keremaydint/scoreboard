@@ -22,3 +22,22 @@ function resetScore(team) {
   const scoreEl = document.getElementById(scoreId);
   scoreEl.textContent = "0";
 }
+
+function setScorePrompt(team) {
+  const score = prompt("Enter new score:");
+  if (score !== null && !isNaN(score)) {
+    const scoreNum = parseInt(score);
+    if (Number.isInteger(scoreNum)) {
+      document.getElementById(`score${team}`).textContent = scoreNum;
+    } else {
+      alert("Please enter a valid score");
+    }
+  } else {
+    alert("Invalid value");
+  }
+}
+
+function setNamePrompt(team) {
+  const name = prompt("Enter team name:");
+  document.getElementById(`teamName${team}`).textContent = name;
+}
