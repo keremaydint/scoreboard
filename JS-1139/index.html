@@ -9,25 +9,25 @@
   <body>
     <div id="container">
       <div class="team" id="teamA">
-        <h2>Score A</h2>
+        <h2 id="teamNameA">Score A</h2>
         <p id="scoreA">0</p>
         <div class="score-controls">
           <button onclick="increaseScore('A')">+</button>
           <button onclick="decreaseScore('A')">-</button>
         </div>
-        <button>Set Score</button>
-        <button>Set Name</button>
+        <button onclick="setScorePrompt('A')">Set Score</button>
+        <button onclick="setNamePrompt('A')">Set Name</button>
         <button onclick="resetScore('A')">Reset</button>
       </div>
       <div class="team" id="teamB">
-        <h2>score B</h2>
+        <h2 id="teamNameB">score B</h2>
         <p id="scoreB">0</p>
         <div class="score-controls">
           <button onclick="increaseScore('B')">+</button>
           <button onclick="decreaseScore('B')">-</button>
         </div>
         <button onclick="setScorePrompt('B')">Set Score</button>
-        <button>Set Name</button>
+        <button onclick="setNamePrompt('B')">Set Name</button>
         <button onclick="resetScore('B')">Reset</button>
       </div>
     </div>
